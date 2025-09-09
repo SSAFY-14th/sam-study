@@ -7,7 +7,7 @@ import java.util.*;
  * 비용 100,000
  */
 
-public class Funczun1916 {
+public class Main_유승준 {
 	static int N, M;
 	static int[] dist;
 	static PriorityQueue<Node> pq;
