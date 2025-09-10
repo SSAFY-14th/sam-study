@@ -15,7 +15,7 @@
 
 | 이름  | GitHub    |
 | --- | --------- |
-| 김민정 | @MinJeongKimm |
+| 김민정 | [@MinJeongKimm](https://github.com/MinJeongKimm) |
 | 김용수 | @canit0221    |
 | 김준이 | @junni413     |
 | 나유경 | @nayukyung123 |
