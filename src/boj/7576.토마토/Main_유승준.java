@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Main_유승준 {
     static Queue<int[]> q = new LinkedList<>();
     static int[][] grid;
     static int[] dx = {0, 0, -1, 1};
