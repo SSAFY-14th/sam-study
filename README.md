@@ -20,7 +20,7 @@
 | 김준이 | @junni413     |
 | 나유경 | @nayukyung123 |
 | 박서영 | @psy06004     |
-| 유승준 | @utact        |
+| 유승준 | [@utact](https://github.com/utact)        |
 
 ---
 
