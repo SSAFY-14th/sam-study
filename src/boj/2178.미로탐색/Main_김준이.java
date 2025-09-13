@@ -17,7 +17,7 @@ public class Main {
 
 	static int[][] maze;
 	static int[][] dist;
-	static int N, M, depth;
+	static int N, M;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -36,7 +36,6 @@ public class Main {
 			}
 		} // 미로 입력 끝
 
-		depth = 1;
 		bfs(0, 0);
 
 		System.out.println(dist[N - 1][M - 1]);
@@ -48,36 +47,29 @@ public class Main {
 		Queue<Pos> q = new LinkedList<>();
 
 		q.add(new Pos(r, c));
-		dist[r][c] = depth;
-		depth++;
-		int qSize = q.size(); // 현재 큐 사이즈
+		dist[r][c] = 1;
 
 		while (!q.isEmpty()) {
-			while (qSize > 0) { // 현재 depth에 큐 사이즈만큼만 반복
-				Pos curr = q.poll();
+			Pos curr = q.poll();
 
-				int[] dr = { 1, -1, 0, 0 };
-				int[] dc = { 0, 0, 1, -1 };
+			int[] dr = { 1, -1, 0, 0 };
+			int[] dc = { 0, 0, 1, -1 };
 
-				// 인접 칸으로 이동(bfs)
-				for (int k = 0; k < 4; k++) {
-					int nr = curr.r + dr[k];
-					int nc = curr.c + dc[k];
+			// 인접 칸으로 이동(bfs)
+			for (int k = 0; k < 4; k++) {
+				int nr = curr.r + dr[k];
+				int nc = curr.c + dc[k];
 
-					// 유효 인덱스인가
-					if (nr < 0 || nc < 0 || nr >= N || nc >= M)
-						continue;
+				// 유효 인덱스인가
+				if (nr < 0 || nc < 0 || nr >= N || nc >= M)
+					continue;
 
-					// 이동 가능하고 방문하지 않았으면 큐에 삽입
-					if (maze[nr][nc] == 1 && dist[nr][nc] == 0) {
-						q.add(new Pos(nr, nc));
-						dist[nr][nc] = depth;
-					}
+				// 이동 가능하고 방문하지 않았으면 큐에 삽입
+				if (maze[nr][nc] == 1 && dist[nr][nc] == 0) {
+					q.add(new Pos(nr, nc));
+					dist[nr][nc] = dist[curr.r][curr.c] + 1;
 				}
-				qSize--;
-			} // 현재 큐 털기
-			qSize = q.size();
-			depth++;
+			}
 		}
 
 	}// bfs
