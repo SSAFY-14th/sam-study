@@ -10,7 +10,7 @@ import java.util.*;
  * 편의를 위해 제로 베이스 -> 원 베이스
  */
 
-class Funczun1753 {
+class Main_유승준 {
     static PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
     static ArrayList<int[]>[] graph;
     static int[] dist;
