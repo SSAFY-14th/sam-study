@@ -1,5 +1,5 @@
 
-# Algorithm-Study
+# Algorithm-Study 
 
 🌳 **Rule**
 
