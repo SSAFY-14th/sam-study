@@ -16,11 +16,11 @@
 | 이름  | GitHub    |
 | --- | --------- |
 | 김민정 | [@MinJeongKimm](https://github.com/MinJeongKimm) |
-| 김용수 | @canit0221    |
-| 김준이 | @junni413     |
-| 나유경 | @nayukyung123 |
-| 박서영 | @psy06004     |
-| 유승준 | [@utact](https://github.com/utact)        |
+| 김용수 | [@canit0221](https://github.com/canit0221) |
+| 김준이 | [@junni413](https://github.com/junni413) |
+| 나유경 | [@nayukyung123](https://github.com/nayukyung123) |
+| 박서영 | [@psy06004](https://github.com/psy06004) |
+| 유승준 | [@utact](https://github.com/utact) |
 
 ---
 
